@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>tap =0;
 comboBar=0;
+comboM=0;
+
 </string>
           </argument>
         </arguments>
@@ -66,6 +68,11 @@ if (tap_key) {
     comboBar+=1;
 }
 
+//combo code
+if ((comboM = 0) &amp;&amp; (!instance_exists(obj_combo)) &amp;&amp; (irandom(1000)&gt;990))
+{
+ instance_create(20,200,obj_combo);
+}
 </string>
           </argument>
         </arguments>
