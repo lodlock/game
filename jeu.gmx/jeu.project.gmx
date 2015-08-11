@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\sp_combo_blue</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
