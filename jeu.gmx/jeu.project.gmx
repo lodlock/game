@@ -12,6 +12,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\test</font>
+    <font>fonts\aefaefaef</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_Exit</object>
