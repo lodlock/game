@@ -10,17 +10,18 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\taetaeraer.gml</script>
-  </scripts>
+  <scripts name="scripts"/>
   <fonts name="fonts">
-    <font>fonts\test</font>
-    <font>fonts\aefaefaef</font>
+    <font>fonts\fnt_princ</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_Exit</object>
+    <object>objects\gameplay</object>
+    <object>objects\obj_hud</object>
+    <object>objects\obj_tapsp</object>
   </objects>
-  <rooms name="rooms"/>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
