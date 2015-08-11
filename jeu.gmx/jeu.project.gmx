@@ -10,9 +10,13 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\test</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_Exit</object>
   </objects>
+  <rooms name="rooms"/>
   <help>
     <rtf>help.rtf</rtf>
   </help>
