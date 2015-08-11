@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\sprite1</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -18,9 +19,14 @@
     <object>objects\gameplay</object>
     <object>objects\obj_hud</object>
     <object>objects\obj_tapsp</object>
+    <objects name="plank">
+      <object>objects\obj_wood</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <rooms name="mode">
+      <room>rooms\test_room</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
