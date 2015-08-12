@@ -28,6 +28,7 @@
             <string>coins = 0;
 tap = 0;
 score = 0;
+time = 0;
 
 room_goto_next();
 </string>
