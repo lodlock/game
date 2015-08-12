@@ -18,7 +18,8 @@
   </fonts>
   <objects name="objects">
     <object>objects\gameplay</object>
-    <object>objects\obj_hud</object>
+    <object>objects\debug</object>
+    <object>objects\hud</object>
     <object>objects\obj_tapsp</object>
     <objects name="plank">
       <object>objects\obj_wood</object>
