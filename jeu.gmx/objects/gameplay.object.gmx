@@ -25,17 +25,47 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar tap comboBar combON comboBar comboM comboX comboY coins;
+            <string>globalvar tap comboBar combON comboBar comboM comboX comboY coins time;
 tap=0;
 score=0;
 coins=0;
 
+if room=test_room{// Set Your Time Start Time
+time = 0;
+alarm[0]=room_speed;} //Set alarm for one second (room_speed)
+
 //combo
 comboBar=0;
-comboM=0; // combo multiplicateur - si combo est réussi par l'utilisateur,  comboM*n s'ajoute au score
+comboM=0; // combo multiplicateur - si combo réussi par le joueur,  comboM*n s'ajoute au score
 comboX=0; // position en abscisse du combo multiplicateur
 comboY=0; // position en ordonné du combo multiplicateur
 combON=0; // debut du combo
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>time+=1;
+
+alarm[0]=room_speed;//reset alarm
 
 </string>
           </argument>
@@ -59,7 +89,10 @@ combON=0; // debut du combo
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>tap_key = device_mouse_check_button_pressed(0, mb_left);
+            <string>// incrementation du temps
+
+
+tap_key = device_mouse_check_button_pressed(0, mb_left);
 
 
 //variable en cours

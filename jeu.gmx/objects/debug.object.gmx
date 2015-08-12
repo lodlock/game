@@ -28,19 +28,27 @@
             <string>draw_set_font(fnt_princ);
 draw_set_colour(c_white);
 
-draw_sprite(spr_coin,0,1720,200); 
-draw_text(1760, 207, " x" +string(coins));
+// pièces
+draw_sprite(spr_coin,0,1720,100); 
+draw_text(1760, 107, " x" +string(coins));
 
-draw_text(10,10,"tap:" + string(tap));
-draw_text(10,20,"ComboBar:" + string( comboBar));
-draw_text(10,30,"random:" + string( irandom(100)));
-draw_text(10,40,"combON:" + string(combON));
+// sablier du temps
+draw_sprite(spr_hourglass,0,220,95); 
+if room=test_room{draw_text(250,100,string(time)+"s");}
+
+
+draw_text(10,100,"tap:" + string(tap));
+draw_text(10,120,"ComboBar:" + string( comboBar));
+draw_text(10,130,"random:" + string( irandom(100)));
+draw_text(10,140,"combON:" + string(combON));
+
+// score: ces 6 lignes de code permettent d'avoir 000000 au lieu de 0
 var t_score = string(score);
 while (string_length(t_score) &lt; 6)
 {
 t_score = string_insert("0", t_score, 1);
 }
-draw_text(room_width/2, 200, "score: "+t_score);
+draw_text(room_width/2, 100, "score: "+t_score);
 //draw_text(10,40,"Combo xscale:" + string(obj_combo.image_xscale));
 </string>
           </argument>
