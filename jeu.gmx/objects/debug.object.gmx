@@ -33,7 +33,7 @@ draw_text(1760, 207, " x" +string(coins));
 
 draw_text(10,10,"tap:" + string(tap));
 draw_text(10,20,"ComboBar:" + string( comboBar));
-draw_text(10,30,"random:" + string( irandom(100)));
+draw_text(10,30,"comboA:" + string( comboA));
 draw_text(10,40,"combON:" + string(combON));
 var t_score = string(score);
 while (string_length(t_score) &lt; 6)

@@ -96,7 +96,9 @@ image_speed =0.15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.combON=1;
+            <string>combON=1;
+instance_destroy();
+comboB-=1;
 </string>
           </argument>
         </arguments>
