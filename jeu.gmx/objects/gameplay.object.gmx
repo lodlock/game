@@ -26,9 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>tap =0;
+global.coins=0;
+
+//combo
 comboBar=0;
 comboM=0;
-
+comboX=0;
+comboY=0;
+combON=0;
 </string>
           </argument>
         </arguments>
@@ -66,12 +71,17 @@ if (tap_key) {
     tap+=1;
     instance_create(mouse_x,mouse_y,obj_tapsp);
     comboBar+=1;
+    global.coins+=1;
 }
 
 //combo code
-if ((comboM = 0) &amp;&amp; (!instance_exists(obj_combo)) &amp;&amp; (irandom(1000)&gt;990))
+//combo random position
+comboX=irandom(1920);
+comboY=irandom(1080);
+//combo create position
+if ((comboM = 0) &amp;&amp; (!instance_exists(obj_combo)) &amp;&amp; (irandom(1000)&gt;990) &amp;&amp; (combON=0))
 {
- instance_create(20,200,obj_combo);
+ instance_create(comboX,comboY,obj_combo);
 }
 </string>
           </argument>
