@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar tap comboBar combON comboBar comboM comboX comboY;
+            <string>globalvar tap comboBar combON comboBar comboM comboX comboY t_score coins;
 tap=0;
+t_score=0;
 coins=0;
 
 //combo
@@ -71,9 +72,11 @@ if (comboBar &lt; 0)
 
 if (tap_key) {
     tap+=1;
-    instance_create(mouse_x,mouse_y,obj_tapsp);
+    instance_create(mouse_x,mouse_y,obj_tapsp); // apparition du sprite poing tap
     comboBar+=1;
-    coins+=1;
+    coins+=1; // les pièces incrémentent de 1 pièce
+    t_score+=1; // le score incremente de 1 point
+
 }
 
 //combo code
