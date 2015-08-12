@@ -30,10 +30,10 @@ coins=0;
 
 //combo
 comboBar=0;
-comboM=0;
-comboX=0;
-comboY=0;
-combON=0;
+comboM=0; // combo multiplicateur - si combo est réussi par l'utilisateur,  comboM*n s'ajoute au score
+comboX=0; // position en abscisse du combo multiplicateur
+comboY=0; // position en ordonné du combo multiplicateur
+combON=0; // debut du combo 
 </string>
           </argument>
         </arguments>
