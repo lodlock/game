@@ -17,17 +17,19 @@
     <font>fonts\fnt_princ</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_setup</object>
     <object>objects\gameplay</object>
     <object>objects\debug</object>
+    <object>objects\obj_combo</object>
     <object>objects\hud</object>
     <object>objects\obj_tapsp</object>
     <objects name="plank">
       <object>objects\obj_wood</object>
     </objects>
-    <object>objects\obj_combo</object>
   </objects>
   <rooms name="rooms">
     <rooms name="mode">
+      <room>rooms\rm_setup</room>
       <room>rooms\test_room</room>
     </rooms>
   </rooms>
