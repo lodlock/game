@@ -29,10 +29,10 @@
 draw_set_colour(c_white);
 
 
-draw_text(10,10,"tap:" + string(global.tap));
+draw_text(10,10,"tap:" + string(tap));
 draw_text(10,20,"ComboBar:" + string( comboBar));
 draw_text(10,30,"random:" + string( irandom(100)));
-draw_text(room_width/2, 150, "coins:" +string(global.coins));
+draw_text(room_width/2, 150, "coins:" +string(coins));
 //draw_text(10,40,"Combo xscale:" + string(obj_combo.image_xscale));
 </string>
           </argument>

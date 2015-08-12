@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.tap =0;
-global.coins=0;
+            <string>tap =0;
+coins=0;
 
 //combo
 comboBar=0;
@@ -68,10 +68,10 @@ if (comboBar &lt; 0)
     }
 
 if (tap_key) {
-    global.tap+=1;
+    tap+=1;
     instance_create(mouse_x,mouse_y,obj_tapsp);
     comboBar+=1;
-    global.coins+=1;
+    coins+=1;
 }
 
 //combo code
