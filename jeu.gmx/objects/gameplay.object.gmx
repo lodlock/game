@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>tap =0;
+            <string>globalvar tap comboBar combON comboBar comboM comboX comboY;
+tap=0;
 coins=0;
 
 //combo
@@ -33,7 +34,8 @@ comboBar=0;
 comboM=0; // combo multiplicateur - si combo est réussi par l'utilisateur,  comboM*n s'ajoute au score
 comboX=0; // position en abscisse du combo multiplicateur
 comboY=0; // position en ordonné du combo multiplicateur
-combON=0; // debut du combo 
+combON=0; // debut du combo
+
 </string>
           </argument>
         </arguments>
@@ -79,7 +81,7 @@ if (tap_key) {
 comboX=random_range(100,1820);
 comboY=random_range(80,980);
 //combo create position
-if ((comboM = 0) &amp;&amp; (!instance_exists(obj_combo)) &amp;&amp; (irandom(1000)&gt;990) &amp;&amp; (combON=0))
+if ((comboM = 0) &amp;&amp; (!instance_exists(obj_combo)) &amp;&amp; (irandom(1000)&gt;990) &amp;&amp; (global.combON=0))
 {
  instance_create(comboX,comboY,obj_combo);
 }
