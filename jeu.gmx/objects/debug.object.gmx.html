@@ -32,16 +32,24 @@ draw_set_colour(c_white);
 draw_sprite(spr_coin,0,1720,100); 
 draw_text(1760, 107, " x" +string(coins));
 
-
-// sablier du temps
-draw_sprite(spr_hourglass,0,220,95); 
-if room=test_room{draw_text(250,100,string(time)+"s");}
+<<<<<<< HEAD
 draw_text(10,10,"tap:" + string(tap));
 draw_text(10,20,"ComboBar:" + string( comboBar));
 draw_text(10,30,"comboA:" + string( comboA));
 draw_text(10,40,"combON:" + string(combON));
+=======
+// sablier du temps
+draw_sprite(spr_hourglass,0,220,95); 
+if room=test_room{draw_text(250,100,string(time)+"s");}
+
+
+draw_text(10,100,"tap:" + string(tap));
+draw_text(10,120,"ComboBar:" + string( comboBar));
+draw_text(10,130,"random:" + string( irandom(100)));
+draw_text(10,140,"combON:" + string(combON));
 
 // score: ces 6 lignes de code permettent d'avoir 000000 au lieu de 0
+>>>>>>> origin/master
 var t_score = string(score);
 while (string_length(t_score) &lt; 6)
 {
