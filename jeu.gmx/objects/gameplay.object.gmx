@@ -109,8 +109,6 @@ if (tap_key) {
     tap+=1;
     instance_create(mouse_x,mouse_y,obj_tapsp); // apparition du sprite poing tap
     comboBar+=1;
-    coins+=1; // les pièces incrémentent de 1 pièce
-    score+=1; // le score incremente de 1 point
 
 }
 
